@@ -671,4 +671,11 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDl6rBy1Jb16UaHCCATMfpMGgbt1ZHpGoZc8K2Xb1Y/
 [   22.079770] cloud-init[1289]: Cloud-init v. 21.2-3-g899bfaa9-0ubuntu2~18.04.1 running 'modules:final' at Wed, 06 Oct 2021 12:14:51 +0000. Up 21.86 seconds.
 [   22.079964] cloud-init[1289]: ci-info: no authorized SSH keys fingerprints found for user ubuntu.
 [   22.080012] cloud-init[1289]: Cloud-init v. 21.2-3-g899bfaa9-0ubuntu2~18.04.1 finished at Wed, 06 Oct 2021 12:14:51 +0000. Datasource DataSourceNoCloud [seed=/dev/sdb][dsmode=net].  Up 22.07 seconds
-
+[42762.310008] INFO: rcu_sched detected stalls on CPUs/tasks:
+[42762.317050] 	0-...!: (3 GPs behind) idle=f5a/140000000000000/0 softirq=54567/54568 fqs=2 
+[42762.327249] 	(detected by 1, t=346357 jiffies, g=13902, c=13901, q=545)
+[42762.358729] rcu_sched kthread starved for 346352 jiffies! g13902 c13901 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x402 ->cpu=1
+[42762.371227] INFO: rcu_sched detected stalls on CPUs/tasks:
+[42762.377612] 	(detected by 1, t=7493198 jiffies, g=13902, c=13901, q=556)
+[42762.392754] All QSes seen, last rcu_sched kthread activity 7493193 (4305583331-4298090138), jiffies_till_next_fqs=1, root ->qsmask 0x0
+[42762.405690] rcu_sched kthread starved for 7493193 jiffies! g13902 c13901 f0x2 RCU_GP_WAIT_FQS(3) ->state=0x200 ->cpu=1
